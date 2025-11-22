@@ -39,6 +39,7 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
         cache: 'npm'
+        cache-dependency-path: 'client/package-lock.json'
 
     - name: Build React frontend
       working-directory: ./client
